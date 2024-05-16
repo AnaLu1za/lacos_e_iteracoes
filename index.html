@@ -1,59 +1,64 @@
- <!DOCTYPE html>
- <html>
- <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Seleção de Músicas</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='script.js'></script>
- </html>
- <div class="main">
- <div class="left">
-  <h1> Contador de Músicas</h1>
-    <img src="img/music-animate.svg" class="left-img" alt="music-animate-animação">
-    </div>
-<form name="selectForm">
-    <p>
-    <div class="right">
-      <div class="card">    
-        <label for="tipoMusica"> Escolha alguns tipos de música, em seguida, clique no botão
-        abaixo:
-      </label>
-      </div>
-      <select id="tipoMusica" name="tipoMusica" multiple="multiple">
-        <option selected="selected">R&B</option>
-        <option>Jazz</option>
-        <option>Blues</option>
-        <option>New Age</option>
-        <option>Classico</option>
-        <option>Ópera</option>
-        <option>Pagode</option>
-        <option>Louvor</option>
-        <option>Eletrônica</option>
-      </select>
-    </p>
-    <p><input id="btn" type="button" value="Quantos foram selecionados?" /></p>
-</div>
-  </form>
+<!DOCTYPE html>
+<html>
 
-  <script>
-    function howMany(selectObject) {
-      var numeroSelecionadas = 0;
-      for (var i = 0; i < selectObject.options.length; i++) {
-        if (selectObject.options[i].selected) {
-          numeroSelecionadas++;
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Seleção de Músicas</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+  <script src='script.js'></script>
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="left">
+      <h1> Contador de Músicas</h1>
+      <img src="img/music-animate.svg" class="left-img" alt="music-animate-animação">
+    </div>
+    <form name="selectForm">
+      <p>
+      <div class="right">
+        <div class="card">
+          <label for="tipoMusica"> Escolha alguns tipos de música, em seguida, clique no botão abaixo:</label>
+        </div>
+        <select id="tipoMusica" name="tipoMusica" multiple="multiple">
+          <option selected="selected">R&B</option>
+          <option>Jazz</option>
+          <option>Blues</option>
+          <option>New Age</option>
+          <option>Classico</option>
+          <option>Ópera</option>
+          <option>Pagode</option>
+          <option>Louvor</option>
+          <option>Eletrônica</option>
+        </select>
+        </p>
+        <p><input id="btn" type="button" value="Quantos foram selecionados?" /></p>
+      </div>
+    </form>
+
+    <script>
+      function howMany(selectObject) {
+        var numeroSelecionadas = 0;
+        for (var i = 0; i < selectObject.options.length; i++) {
+          if (selectObject.options[i].selected) {
+            numeroSelecionadas++;
+          }
         }
+        return numeroSelecionadas;
       }
-      return numeroSelecionadas;
-    }
-  
-    var btn = document.getElementById("btn");
-    btn.addEventListener("click", function () {
-      alert(
-        "Total de opções selecionadas: " +
+
+      var btn = document.getElementById("btn");
+      btn.addEventListener("click", function () {
+        alert(
+          "Total de opções selecionadas: " +
           howMany(document.selectForm.tipoMusica),
-      );
-    });
-  </script>
-  
+        );
+      });
+    </script>
+
+</body>
+
+</html>
