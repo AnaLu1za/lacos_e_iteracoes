@@ -31,7 +31,13 @@ body {
     margin-bottom: 10px;
     color: #3b3b3a;
   }
-  
+  .left h1{
+    position: absolute;
+    right: 325px;
+
+    top: 60px;
+  }
+
   select {
     width: 100%;
     padding: 8px;
