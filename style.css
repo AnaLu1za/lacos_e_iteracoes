@@ -1,8 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Freeman&display=swap');
 body {
-    background-color:  #d9ffb3; /* cor de fundo claro terroso */
+    background-color:  #e4e9ff; /* cor de fundo claro terroso */
     color: #503b31; /* cor da fonte escura terrosa */
-    font-family: 'Arial', sans-serif;
+      font-family: "Freeman", sans-serif;
+      font-weight: 400;
+      font-style: normal;
   }
   
   form {
@@ -12,7 +14,7 @@ body {
     max-width: 350px;
     margin: 100px auto;
     padding: 20px;
-    background-color: #f4f0eb;
+    background-color: #f4f0ebd5;
     border: 1px solid #c9baaf;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -49,13 +51,13 @@ body {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color:#264d00;
+    background-color: #607ec9;
     color: white;
     cursor: pointer;
   }
   
   input[type="button"]:hover {
-    background-color:   #59b300;
+    background-color:  #9ab4ff;
   }
 
   .left{
@@ -71,3 +73,34 @@ body {
     bottom: 90px;
     left: 90px;
 }
+@media only screen and (max-width: 950px){
+  body{
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .main{
+    flex-direction: column;
+  }
+
+
+  .left {
+    width: 100%;
+    height: auto;
+  }
+
+  .right {
+    width: 100%;
+    height: auto;
+  }
+
+  .left-img {
+    width: 40vh;
+  }
+    
+  .card {
+    width: 90%;
+  }
+
+  }
