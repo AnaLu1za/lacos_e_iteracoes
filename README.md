@@ -1,6 +1,6 @@
 # Projeto aplicando Laços e Iterações
 
-![musicas](img/musicas.gif)
+![musicas](img/contadordemusicas.gif)
 
 ## Índice
 * [Descrição](#descrição)
