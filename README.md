@@ -15,7 +15,7 @@
 
 - O código JavaScript ``(em script.js)`` foca na funcionalidade:
 
-- Função ``howMany:``
+**Função ``howMany:``**
 - Recebe um ``selectObject`` (o elemento da lista suspensa) como entrada.
 - Inicializa numeroSelecionadas (número de opções selecionadas) como zero.
 - Itera por todas as opções no ``selectObject`` usando um loop.
@@ -23,7 +23,7 @@
 - Se selecionada, incrementa ``numeroSelecionadas``.
 - Retorna a contagem final ``(numeroSelecionadas)``.
 
-- Evento de clique do botão:
+**Evento de clique do botão:**
 - Recupera o elemento do botão usando ``document.getElementById("btn")``.
 - Anexa um ouvinte de evento de clique ao botão.
 - Quando clicado, a função dentro do listener aciona a função ``howMany``, passando o elemento ``document.selectForm``.tipoMusica (a lista suspensa) como argumento.
