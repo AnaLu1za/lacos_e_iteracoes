@@ -79,34 +79,3 @@ body {
     bottom: 90px;
     left: 90px;
 }
-@media only screen and (max-width: 950px){
-  body{
-    width: 85%;
-  }
-}
-
-@media only screen and (max-width: 600px){
-  .main{
-    flex-direction: column;
-  }
-
-
-  .left {
-    width: 100%;
-    height: auto;
-  }
-
-  .right {
-    width: 100%;
-    height: auto;
-  }
-
-  .left-img {
-    width: 40vh;
-  }
-    
-  .card {
-    width: 90%;
-  }
-
-  }
