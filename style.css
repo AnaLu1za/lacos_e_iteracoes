@@ -79,3 +79,37 @@ input[type="button"] {
       bottom: 90px;     
       left: 90px; 
     } 
+    
+    @media only screen and (max-width: 950px){
+      .card{
+        width: 85%;
+      }
+    }
+    
+    @media only screen and (max-width: 600px){
+      .main{
+        flex-direction: column;
+      }
+    
+      .left h1 {
+        display: none;
+      }
+    
+      .left {
+        width: 100%;
+        height: auto;
+      }
+    
+      .right {
+        width: 100%;
+        height: auto;
+      }
+    
+      .left-img {
+        width: 40vh;
+      }
+    
+      .card {
+        width: 90%;
+      }
+    }
