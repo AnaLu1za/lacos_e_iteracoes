@@ -1,5 +1,5 @@
 # Projeto aplicando Laços e Iterações
-
+O trabalho foi referênciado ao código do professor Leonardo Sidon, [código](gg.gg/exec-avaliativo)
 ![musicas](img/musicas.gif)
 
 ## Índice
