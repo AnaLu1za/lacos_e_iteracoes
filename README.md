@@ -1,5 +1,6 @@
 # Projeto aplicando Laços e Iterações
-O trabalho foi referênciado ao código do professor Leonardo Sidon, [código](gg.gg/exec-avaliativo)
+O trabalho foi feito baseado ao código disponível na página [MDN Web Docs](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Loops_and_iteration)
+<br>
 ![musicas](img/musicas.gif)
 
 ## Índice
